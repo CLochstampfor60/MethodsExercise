@@ -32,20 +32,64 @@ namespace MethodsExercise
             // *******
 
             // Exercise 2 STARTS here
-            Console.WriteLine("Please provide a number to add");
+            //Add STARTS
+            Console.WriteLine("Please provide a number to add.");
             int num1 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Please provide a number to add to the prior number");
+            Console.WriteLine("Please provide a number to add to the prior number.");
             int num2 = int.Parse(Console.ReadLine());
 
             int sum = Sum(num1, num2);  
-            Console.WriteLine($"The sum is: {sum}");
+            Console.WriteLine($"The sum is: {sum}.");
 
-            Console.WriteLine("Please provide a number to subtract");
+
+
+            //Subtract STARTS
+            Console.WriteLine("Please provide a number to subtract.");
             int x = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Please provide a number to subtract");
+            Console.WriteLine("Please provide a number to subtract to the prior number.");
             int y = int.Parse(Console.ReadLine());
+
+            int subtract = Subtract(x, y);
+            Console.WriteLine($"The subtraction is: {subtract}.");
+
+
+
+            //Multiply STARTS
+            Console.WriteLine("Please provide a number to multiply.");
+            int a = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please provide a number to multiply to the prior number.");
+            int b = int.Parse(Console.ReadLine());
+
+            int multiply = Multiply(a, b);
+            Console.WriteLine($"The multiplication is: {multiply}.");
+
+
+
+            //Divide STARTS
+            Console.WriteLine("Please provide a number to divide.");
+            int c = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please provide a number to divide to the prior number.");
+            int d = int.Parse(Console.ReadLine());
+
+            int divide = Divide(c, d);
+            Console.WriteLine($"The division is: {divide}.");
+
+
+
+            //Modolus STARTS
+            Console.WriteLine("Please provide a number to modulus.");
+            int e = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Please provide a number to modulus to the prior number.");
+            int f = int.Parse(Console.ReadLine());
+
+            int modulus = Modulus(e, f);
+            Console.WriteLine($"The modulus is: {modulus}.");
+
         }
         public static int Sum (int num1, int num2) { 
           return num1 + num2; }
