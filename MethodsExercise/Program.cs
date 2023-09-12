@@ -91,11 +91,19 @@ namespace MethodsExercise
             Console.WriteLine($"The modulus is: {modulus}.");
 
         }
-        public static int Sum (int num1, int num2) { 
-          return num1 + num2; }
+
+        public static int Sum(params int[] list) 
+        {   int sum = 0;
+            for (int i = 0; i < list.Length; i++)
+            {
+                sum = sum + list[i];
+            }
+            return sum;
+        }
 
         public static int Subtract(int x, int y)
         {
+
             return x - y;
         }
 
